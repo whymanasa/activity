@@ -13,5 +13,11 @@ btns.forEach(function(btn){
         }
         else{count=0;}
         value.textContent=count;
+        if (count>0) {
+            value.style.color='pink';
+        }
+        if (count<0) {
+            value.style.color='red';
+        }
     });
 });
